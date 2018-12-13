@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+
+  .header-image .title-area {
+    display: none;
+  }
+
+  /* Accessible Menu
+  --------------------------------------------- */
+
+  .site-inner {
+  }
+
+  .menu .menu-item:focus {
+    position: static;
+  }
+
+  .menu .menu-item > a:focus + ul.sub-menu,
+  .menu .menu-item.sfHover > ul.sub-menu {
+    left: auto;
+    opacity: 1;
+  }
+
+  .menu-toggle,
+  .sub-menu-toggle {
+    display: none;
+    visibility: hidden;
+  }
+
+
+  /* # Site Footer
+  ---------------------------------------------------------------------------------------------------- */
+
+  .site-footer {
+    font-size: 0.8em;
+  }
+}
