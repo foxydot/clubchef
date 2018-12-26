@@ -1,6 +1,16 @@
 @import "bootstrap-overrides.scss";
 @import "mixins.scss";
 
+nav{
+  z-index: 5;
+  position: relative;
+}
+.homepage-widget-area{
+  top: -2.6em;
+  z-index: 0;
+  position: relative;
+}
+
 h1.entry-title{display: none;}
 .entry{
   padding: 0.5em 0;

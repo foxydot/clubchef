@@ -104,7 +104,7 @@ remove_action('genesis_header','genesis_do_header' );
 add_action('genesis_header','msdlab_do_header' );
 
 
-add_action('genesis_header','msdlab_homepage_sidebar');
+add_action('genesis_header','msdlab_homepage_sidebar',12);
 add_action('after_setup_theme','msdlab_add_homepage_sidebar', 4);
 /*** NAV ***/
 /**

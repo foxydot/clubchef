@@ -18,6 +18,15 @@
 /* Neutrals */
 /* Default Colors */
 /* Social Colors */
+nav {
+  z-index: 5;
+  position: relative; }
+
+.homepage-widget-area {
+  top: -2.6em;
+  z-index: 0;
+  position: relative; }
+
 h1.entry-title {
   display: none; }
 
