@@ -889,7 +889,7 @@ img.alignright,
   padding: 0;
   transition: all 0.8s;
   border: 0;
-  background: url(../images/header-bg.png) repeat center top; }
+  background: url(../images/header-bg.png) repeat-x center top; }
   .site-header .container {
     max-width: 100%; }
 
