@@ -14,7 +14,7 @@
   .sub-menu-toggle {
     border-width: 0;
     background-color: $white;
-    color: $dkgrey;
+    color: $dkbeige;
     display: block;
     margin: 0 auto;
     overflow: hidden;
@@ -362,70 +362,27 @@
   margin-left: -15px;
   margin-right: -15px;
   .menu{
+    @include customheader(1.4);
+    font-weight: 400;
     display: block;
     >li{
       margin: 0;
       padding: 0;
+      border-bottom: 1px solid $dkbeige;
+      &.first-child{
+        border-top: 2px solid $dkbeige;
+      }
         a{
+          padding: 0.5em 1em;
           text-decoration: none;
           border-bottom: 0;
+          color: $dkbeige;
+          display: block;
           &:hover{
+            color: $dkbeige;
+            background-color: rgba($dkbeige,0.2);
           }
         }
-        ul.sub-menu{
-          display: none;
-          margin-left: 0;
-          overflow: hidden;
-          transition: all 2s ease-in-out;
-        }
-        >ul.sub-menu{
-          height: auto;
-          max-height: 400px;
-        }
-        li{
-          border-top: 2px dashed $ltgrey;
-          margin: 0;
-          &.first-child{
-            border-top: 0;
-          }
-          i{
-            color: $medgrey;
-            width: 1em;
-            margin: 0 1rem;
-          }
-          i.fa-plus,i.fa-minus{
-            cursor: pointer;
-          }
-          a{
-            color: $medgrey;
-            padding: 1rem 0;
-            display: inline-block;
-            width: 80%;
-            font-size: 18px;
-            font-size: 1.8rem;
-            font-weight: 400;
-          }
-          &:hover{
-            background: fade($medgrey,10%);
-            a:hover{
-              text-decoration: none;
-            }
-          }
-          >ul.sub-menu{
-            background: $offwhite;
-            li{
-              border-top: 2px dashed $ltgrey;
-              padding-left: 6rem;
-            }
-          }
-          &.open{
-            >ul.sub-menu{
-              height: auto;
-              max-height: 400px;
-            }
-          }
-        }
-
     }
   }
 }
