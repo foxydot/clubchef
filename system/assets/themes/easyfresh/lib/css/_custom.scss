@@ -2,3 +2,49 @@
   background: $white;
   border-radius: 0 0 12px 12px;
 }
+
+.product-title-image{
+  text-indent: -9999px;
+  min-height: 9em;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.product-list{
+  border: 1px solid #CCC;
+  tr{
+    &.header-row{
+      background: linear-gradient($dkbeige,$ltbeige);
+    }
+    &.even{
+      background-color: rgba($ltbeige,0.6);
+    }
+    &.odd{
+      background-color: rgba($ltbeige,0.3);
+    }
+    th,td{
+      line-height: 1;
+      text-align: center;
+      border-right: 1px solid #CCC;
+      &:last-child{
+        border-right: 0;
+      }
+    }
+    th{
+      @include customheader(1.8);
+      color: $white;
+      padding: 0.5em;
+    }
+  }
+}
+
+.product-footer{
+  .widget-title{
+    font-size: 1.6em;
+    margin-bottom: 0;
+  }
+  .textwidget p {
+    font-size: 0.9em;
+  }
+}

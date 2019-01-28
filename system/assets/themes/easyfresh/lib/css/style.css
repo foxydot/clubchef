@@ -1252,10 +1252,10 @@ img.alignright,
       color: #FFF; }
 
 /* Sidebar nav */
-.widget_nav_menu {
+.sidebar .widget_nav_menu {
   margin-left: -15px;
   margin-right: -15px; }
-  .widget_nav_menu .menu {
+  .sidebar .widget_nav_menu .menu {
     font-family: 'Homenaje', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
@@ -1263,19 +1263,19 @@ img.alignright,
     font-size: 1.4em;
     font-weight: 400;
     display: block; }
-    .widget_nav_menu .menu > li {
+    .sidebar .widget_nav_menu .menu > li {
       margin: 0;
       padding: 0;
       border-bottom: 1px solid #7F7049; }
-      .widget_nav_menu .menu > li.first-child {
+      .sidebar .widget_nav_menu .menu > li.first-child {
         border-top: 2px solid #7F7049; }
-      .widget_nav_menu .menu > li a {
+      .sidebar .widget_nav_menu .menu > li a {
         padding: 0.5em 1em;
         text-decoration: none;
         border-bottom: 0;
         color: #7F7049;
         display: block; }
-        .widget_nav_menu .menu > li a:hover {
+        .sidebar .widget_nav_menu .menu > li a:hover {
           color: #7F7049;
           background-color: rgba(127, 112, 73, 0.2); }
 
@@ -1535,6 +1535,43 @@ p.entry-meta {
 .content-sidebar-wrap {
   background: #FFF;
   border-radius: 0 0 12px 12px; }
+
+.product-title-image {
+  text-indent: -9999px;
+  min-height: 9em;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.product-list {
+  border: 1px solid #CCC; }
+  .product-list tr.header-row {
+    background: linear-gradient(#7F7049, #ebdab3); }
+  .product-list tr.even {
+    background-color: rgba(235, 218, 179, 0.6); }
+  .product-list tr.odd {
+    background-color: rgba(235, 218, 179, 0.3); }
+  .product-list tr th, .product-list tr td {
+    line-height: 1;
+    text-align: center;
+    border-right: 1px solid #CCC; }
+    .product-list tr th:last-child, .product-list tr td:last-child {
+      border-right: 0; }
+  .product-list tr th {
+    font-family: 'Homenaje', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #FFF;
+    padding: 0.5em; }
+
+.product-footer .widget-title {
+  font-size: 1.6em;
+  margin-bottom: 0; }
+
+.product-footer .textwidget p {
+  font-size: 0.9em; }
 
 @media only screen and (min-width: 768px) {
   .header-image .title-area {

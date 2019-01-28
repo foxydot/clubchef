@@ -228,3 +228,11 @@ function msdlab_filter_description($form){
     $form['description'] = do_shortcode($form['description']);
         return $form;
 }
+
+// Remove Blog & Archive Template From Genesis
+add_filter( 'theme_page_templates', 'bourncreative_remove_page_templates' );
+function bourncreative_remove_page_templates( $templates ) {
+    unset( $templates['page_blog.php'] );
+    unset( $templates['page_archive.php'] );
+    return $templates;
+}

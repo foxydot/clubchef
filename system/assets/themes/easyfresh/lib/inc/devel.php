@@ -8,7 +8,7 @@ if(!function_exists('ts_data')){
         $ret = '<textarea class="troubleshoot" rows="20" cols="100">';
         $ret .= print_r($data,true);
         $ret .= '</textarea>';
-        if(is_admin() && $current_user->user_login == 'msd_lab'){
+        if($current_user->user_login == 'msd_lab'){
             print $ret;
         }
     }
@@ -29,7 +29,7 @@ if(!function_exists('my_msdlab_trace')) {
         global $wp_filter;
         global $allowedposttags;
         global $current_user;
-        ts_data($current_user);
-        //ts_var($wp_filter['genesis_entry_header']);
+        //ts_data($current_user);
+        ts_var($wp_filter['genesis_entry_header']);
     }
 }

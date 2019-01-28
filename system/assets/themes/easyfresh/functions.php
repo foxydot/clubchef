@@ -23,6 +23,10 @@ include_once( get_stylesheet_directory() . '/lib/inc/theme-defaults.php' );
 include_once( get_stylesheet_directory() . '/lib/inc/helper-functions.php' );
 include_once( get_stylesheet_directory() . '/lib/inc/msd-functions.php' ); //should this go to plugin?
 include_once( get_stylesheet_directory() . '/lib/inc/genesis_blog_grid.php' );
+include_once( get_stylesheet_directory() . '/lib/inc/product-support.php' );
+if(class_exists('MSDLABProductSupport')){
+    new MSDLABProductSupport();
+}
 
 // Enqueue stuff.
 include_once( get_stylesheet_directory() . '/lib/inc/register-scripts.php' );
@@ -171,7 +175,7 @@ function msdlab_favicon_filter( $favicon_url ) {
 /*** ORIG ***/
 
 // Add support for after entry widget.
-add_theme_support( 'genesis-after-entry-widget-area' );
+//add_theme_support( 'genesis-after-entry-widget-area' );
 
 // Modify size of the Gravatar in the author box.
 add_filter( 'genesis_author_box_gravatar_size', 'genesis_msdlab_child_author_box_gravatar' );
