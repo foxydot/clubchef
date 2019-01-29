@@ -1042,8 +1042,8 @@ img.alignright,
   .menu-toggle:hover,
   .sub-menu-toggle:focus,
   .sub-menu-toggle:hover {
-    background: transparent;
-    color: #ac1017;
+    background: #FFF;
+    color: #7F7049;
     border-width: 0; }
   .menu-toggle {
     line-height: 20px;
@@ -1616,6 +1616,39 @@ p.entry-meta {
 
 .product-footer .textwidget p {
   font-size: 0.9em; }
+
+@media only screen and (max-width: 767px) {
+  .site-header .container {
+    padding: 0; }
+  .nav-primary .wrap {
+    text-align: left; }
+  .nav-primary .menu .menu-item {
+    font-family: 'Homenaje', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 700;
+    font-size: 1.2em;
+    border-left: 0;
+    border-bottom: 1px solid #ebdab3;
+    padding: 0;
+    text-align: left; }
+    .nav-primary .menu .menu-item a {
+      border-left: 0;
+      color: #7F7049;
+      padding: 0 0 0 1em; }
+    .nav-primary .menu .menu-item.last-child {
+      border-right: 0; }
+      .nav-primary .menu .menu-item.last-child a {
+        border-right: 0; }
+  .nav-primary .menu .menu-item.logo {
+    display: none; }
+  .content-sidebar-wrap {
+    display: block; }
+  .product-title-image {
+    min-height: 3em; }
+  .product-list tr th {
+    font-size: 1em;
+    padding: 0.25em; } }
 
 @media only screen and (min-width: 768px) {
   .site-header {
