@@ -1448,7 +1448,8 @@ p.entry-meta {
       column-count: 1;
       column-gap: 30px; }
       .footer-widgets .widget.widget_nav_menu ul.menu > li {
-        margin-bottom: 0.5em;
+        margin-bottom: 0;
+        padding-bottom: 0;
         -webkit-column-break-inside: avoid;
         page-break-inside: avoid;
         break-inside: avoid; }
@@ -1538,7 +1539,7 @@ p.entry-meta {
 
 .product-title-image {
   text-indent: -9999px;
-  min-height: 9em;
+  min-height: 8em;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain; }
