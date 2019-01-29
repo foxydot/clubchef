@@ -1,7 +1,69 @@
 @media only screen and (min-width: 768px) {
 
+
+  .site-header {
+    background: url(../images/header-bg.png) repeat-x center top;
+  }
+
   .header-image .title-area {
     display: none;
+  }
+
+  .pre-header{
+    margin-top: 0;
+  }
+
+  .pre-header .widget-area {
+    &:after{
+      @include clearfix;
+    }
+    .widget{
+      &.first-child{
+        float: left;
+        text-align: left;
+      }
+      &.last-child{
+        float: right;
+        text-align: right;
+      }
+    }
+  }
+  .pre-header .widget-area {
+    .search-form {
+      display: inline-block;
+      padding: 0;
+      margin: 0.4em 0;
+      position: relative;
+      whitespace: nowrap;
+      input[type="search"] {
+        font-size: 1.4rem;
+        width: 25rem;
+        background: $white;
+        padding: 0.5em 2.4em 0.5em 1em;
+        border: 1px solid $beige;
+        line-height: 1;
+      }
+      input[type="submit"] {
+        @include fontawesome;
+        background: transparent;
+        border: 0 none;
+        clip: auto;
+        color: $beige;
+        display: block;
+        font-size: 1.2rem;
+        height: 18px;
+        line-height: 1;
+        text-align: center;
+        width: 18px;
+        right: 1rem;
+        top: -0.5em;
+        position: absolute;
+      }
+      &:hover {
+        input[type="search"] {
+        }
+      }
+    }
   }
 
   /* Accessible Menu

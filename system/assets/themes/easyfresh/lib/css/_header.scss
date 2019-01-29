@@ -7,7 +7,7 @@
   padding: 0;
   transition: all 0.8s;
   border: 0;
-  background: url(../images/header-bg.png) repeat-x center top;
+  background: url(../images/mobile-header-bg.png) repeat-x center top;
 
   .container{
     max-width: 100%;
@@ -27,6 +27,10 @@
   margin: 0 auto;
   width: 100%;
   padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header-full-width .title-area {
@@ -62,7 +66,7 @@
 .header-image .site-title > a {
   background-position: center top;
   background-size: contain;
-  background-image: url(../images/logo-header.jpg);
+  background-image: url(../images/logo-top.png);
   background-repeat: no-repeat;
 }
 
@@ -82,16 +86,60 @@
 /* Widget Area
 --------------------------------------------- */
 
+.pre-header{
+  margin-top: 11em;
+}
+
 .pre-header .widget-area {
   &:after{
     @include clearfix;
   }
   .widget{
-    &.first-child{
-      float: left;
+    float: none;
+    display: block;
+  }
+}
+
+.pre-header .widget-area {
+  text-align: center;
+  .msdsocial_phone{
+    @include customheader(2.4);
+    color: $beige;
+    margin: 0 auto;
+  }
+  .search-form {
+    display: inline-block;
+    padding: 0;
+    margin: 0.4em 0;
+    position: relative;
+    whitespace: nowrap;
+    input[type="search"] {
+      font-size: 1.4rem;
+      width: 25rem;
+      background: $white;
+      padding: 0.5em 2.4em 0.5em 1em;
+      border: 1px solid $beige;
+      line-height: 1;
     }
-    &.last-child{
-      float: right;
+    input[type="submit"] {
+      @include fontawesome;
+      background: transparent;
+      border: 0 none;
+      clip: auto;
+      color: $beige;
+      display: block;
+      font-size: 1.2rem;
+      height: 18px;
+      line-height: 1;
+      text-align: center;
+      width: 18px;
+      right: 1rem;
+      top: -0.5em;
+      position: absolute;
+    }
+    &:hover {
+      input[type="search"] {
+      }
     }
   }
 }

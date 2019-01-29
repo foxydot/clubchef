@@ -672,7 +672,6 @@ th:first-child {
   margin-bottom: 40px; }
 
 .site-header .search-form {
-  float: right;
   margin: 0; }
 
 .post-password-form input[type="submit"],
@@ -889,7 +888,7 @@ img.alignright,
   padding: 0;
   transition: all 0.8s;
   border: 0;
-  background: url(../images/header-bg.png) repeat-x center top; }
+  background: url(../images/mobile-header-bg.png) repeat-x center top; }
   .site-header .container {
     max-width: 100%; }
 
@@ -903,7 +902,11 @@ img.alignright,
 .header-image .title-area {
   margin: 0 auto;
   width: 100%;
-  padding: 0; }
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 .header-full-width .title-area {
   float: none;
@@ -933,7 +936,7 @@ img.alignright,
 .header-image .site-title > a {
   background-position: center top;
   background-size: contain;
-  background-image: url(../images/logo-header.jpg);
+  background-image: url(../images/logo-top.png);
   background-repeat: no-repeat; }
 
 .site-description {
@@ -948,17 +951,57 @@ img.alignright,
 
 /* Widget Area
 --------------------------------------------- */
+.pre-header {
+  margin-top: 11em; }
+
 .pre-header .widget-area:after {
   content: " ";
   display: table;
   clear: both;
   zoom: 1; }
 
-.pre-header .widget-area .widget.first-child {
-  float: left; }
+.pre-header .widget-area .widget {
+  float: none;
+  display: block; }
 
-.pre-header .widget-area .widget.last-child {
-  float: right; }
+.pre-header .widget-area {
+  text-align: center; }
+  .pre-header .widget-area .msdsocial_phone {
+    font-family: 'Homenaje', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 700;
+    font-size: 2.4em;
+    color: #ceb892;
+    margin: 0 auto; }
+  .pre-header .widget-area .search-form {
+    display: inline-block;
+    padding: 0;
+    margin: 0.4em 0;
+    position: relative;
+    whitespace: nowrap; }
+    .pre-header .widget-area .search-form input[type="search"] {
+      font-size: 1.4rem;
+      width: 25rem;
+      background: #FFF;
+      padding: 0.5em 2.4em 0.5em 1em;
+      border: 1px solid #ceb892;
+      line-height: 1; }
+    .pre-header .widget-area .search-form input[type="submit"] {
+      font-family: FontAwesome;
+      background: transparent;
+      border: 0 none;
+      clip: auto;
+      color: #ceb892;
+      display: block;
+      font-size: 1.2rem;
+      height: 18px;
+      line-height: 1;
+      text-align: center;
+      width: 18px;
+      right: 1rem;
+      top: -0.5em;
+      position: absolute; }
 
 .page-title-area .banner .wrap {
   background-repeat: no-repeat;
@@ -1575,8 +1618,51 @@ p.entry-meta {
   font-size: 0.9em; }
 
 @media only screen and (min-width: 768px) {
+  .site-header {
+    background: url(../images/header-bg.png) repeat-x center top; }
   .header-image .title-area {
     display: none; }
+  .pre-header {
+    margin-top: 0; }
+  .pre-header .widget-area:after {
+    content: " ";
+    display: table;
+    clear: both;
+    zoom: 1; }
+  .pre-header .widget-area .widget.first-child {
+    float: left;
+    text-align: left; }
+  .pre-header .widget-area .widget.last-child {
+    float: right;
+    text-align: right; }
+  .pre-header .widget-area .search-form {
+    display: inline-block;
+    padding: 0;
+    margin: 0.4em 0;
+    position: relative;
+    whitespace: nowrap; }
+    .pre-header .widget-area .search-form input[type="search"] {
+      font-size: 1.4rem;
+      width: 25rem;
+      background: #FFF;
+      padding: 0.5em 2.4em 0.5em 1em;
+      border: 1px solid #ceb892;
+      line-height: 1; }
+    .pre-header .widget-area .search-form input[type="submit"] {
+      font-family: FontAwesome;
+      background: transparent;
+      border: 0 none;
+      clip: auto;
+      color: #ceb892;
+      display: block;
+      font-size: 1.2rem;
+      height: 18px;
+      line-height: 1;
+      text-align: center;
+      width: 18px;
+      right: 1rem;
+      top: -0.5em;
+      position: absolute; }
   /* Accessible Menu
   --------------------------------------------- */
   .menu .menu-item:focus {
@@ -1672,41 +1758,6 @@ p.entry-meta {
     margin-bottom: 0; }
   /* Widget Area
   --------------------------------------------- */
-  .pre-header .widget-area .msdsocial_phone {
-    font-family: 'Homenaje', sans-serif;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    font-weight: 700;
-    font-size: 2.4em;
-    color: #ceb892; }
-  .pre-header .widget-area .search-form {
-    display: inline-block;
-    padding: 0;
-    margin: 0.4em 0;
-    position: relative;
-    whitespace: nowrap; }
-    .pre-header .widget-area .search-form input[type="search"] {
-      font-size: 1.4rem;
-      width: 25rem;
-      background: #FFF;
-      padding: 0.5em 2.4em 0.5em 1em;
-      border: 1px solid #ceb892;
-      line-height: 1; }
-    .pre-header .widget-area .search-form input[type="submit"] {
-      font-family: FontAwesome;
-      background: transparent;
-      border: 0 none;
-      clip: auto;
-      color: #ceb892;
-      display: block;
-      font-size: 1.2rem;
-      height: 18px;
-      line-height: 1;
-      text-align: center;
-      width: 18px;
-      right: 1rem;
-      top: -0.5em;
-      position: absolute; }
   .page-title-area {
     background: #FFF; }
     .page-title-area .banner .texturize .gradient {
