@@ -230,19 +230,19 @@
 --------------------------------------------- */
 
 .nav-primary {
-
   .wrap{
     text-align: center;
   }
   .menu {
     position: relative;
     font-weight: 600;
+    font-size: 1em;
     .menu-item{
-      @include customheader(1.8);
+      @include customheader(2);
       border-left: 1px solid rgba($ltbeige,50%);
       padding: 0;
       text-align: center;
-      margin-left: -2px;
+      margin-left: -3px;
       a{
         border-left: 1px solid rgba($dkbeige,50%);
         color: $dkbeige;

@@ -1201,17 +1201,18 @@ img.alignright,
 
 .nav-primary .menu {
   position: relative;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 1em; }
   .nav-primary .menu .menu-item {
     font-family: 'Homenaje', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     font-weight: 700;
-    font-size: 1.8em;
+    font-size: 2em;
     border-left: 1px solid #ebdab3;
     padding: 0;
     text-align: center;
-    margin-left: -2px; }
+    margin-left: -3px; }
     .nav-primary .menu .menu-item a {
       border-left: 1px solid #7f7049;
       color: #7F7049;
