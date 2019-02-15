@@ -1912,21 +1912,21 @@ p.entry-meta {
         background-color: #F37D2A; }
     .footer-widgets .search-form input:focus {
       border: 0 solid #ddd; }
-    .footer-widgets .widget.widget_nav_menu {
+    .footer-widgets .widget.widget_nav_menu:not(.first-child) {
       text-align: left; }
-      .footer-widgets .widget.widget_nav_menu ul.menu {
+      .footer-widgets .widget.widget_nav_menu:not(.first-child) ul.menu {
         font-size: 1em;
-        column-count: 2;
+        column-count: 3;
         column-gap: 30px; }
-        .footer-widgets .widget.widget_nav_menu ul.menu > li {
+        .footer-widgets .widget.widget_nav_menu:not(.first-child) ul.menu > li {
           -webkit-column-break-inside: avoid;
           page-break-inside: avoid;
           break-inside: avoid; }
-          .footer-widgets .widget.widget_nav_menu ul.menu > li .sub-menu {
+          .footer-widgets .widget.widget_nav_menu:not(.first-child) ul.menu > li .sub-menu {
             margin-bottom: 1em; }
-            .footer-widgets .widget.widget_nav_menu ul.menu > li .sub-menu li {
+            .footer-widgets .widget.widget_nav_menu:not(.first-child) ul.menu > li .sub-menu li {
               margin-left: 0; }
-            .footer-widgets .widget.widget_nav_menu ul.menu > li .sub-menu .sub-menu {
+            .footer-widgets .widget.widget_nav_menu:not(.first-child) ul.menu > li .sub-menu .sub-menu {
               display: none; }
   /* # Site Footer
   ---------------------------------------------------------------------------------------------------- */ }
