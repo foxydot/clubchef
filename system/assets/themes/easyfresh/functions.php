@@ -28,6 +28,11 @@ if(class_exists('MSDLABProductSupport')){
     new MSDLABProductSupport();
 }
 
+require_once(get_stylesheet_directory() . '/lib/inc/sidebar_content_support.php');
+if(class_exists('MSDLab_Sidebar_Content_Support')){
+    new MSDLab_Sidebar_Content_Support();
+}
+
 // Enqueue stuff.
 include_once( get_stylesheet_directory() . '/lib/inc/register-scripts.php' );
 
@@ -72,14 +77,14 @@ if(class_exists('MSDLab_Genesis_Bootstrap')){
         'sidebar' => array(
             'xs' => 12,
             'sm' => 12,
-            'md' => 2,
-            'lg' => 2
+            'md' => 3,
+            'lg' => 3
         ),
         'sidebar_alt' => array(
             'xs' => 12,
             'sm' => 12,
-            'md' => 2,
-            'lg' => 2
+            'md' => 3,
+            'lg' => 3
         ),
     );
     $bootstrappin = new MSDLab_Genesis_Bootstrap($options);

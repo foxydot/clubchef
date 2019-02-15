@@ -1744,8 +1744,7 @@ p.entry-meta {
   .sidebar-content .sidebar-primary,
   .sidebar-sidebar-content .sidebar-primary {
     float: left;
-    order: 1;
-    width: 30%; }
+    order: 1; }
   /* ### Secondary Sidebar */
   .sidebar-secondary {
     float: left; }
